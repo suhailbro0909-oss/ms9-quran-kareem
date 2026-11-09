@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Quran Kareem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">☪ AL-QURAN</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#surahs">Surahs</a>
+            <a href="#reader">Read Quran</a>
+            <a href="#bookmarks">My Bookmarks</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>القرآن الكريم</h1>
+        <h2>Al Quran Kareem</h2>
+        <p>The Divine Words of Allah</p>
+        <a href="#surahs" class="btn">Start Reading</a>
+    </section>
+
+    <!-- DAILY SECTION -->
+    <section class="daily">
+        <h2>Daily Reminder</h2>
+        <p>Read, Reflect and Remember Allah.</p>
+    </section>
+
+    <!-- SURAH SECTION -->
+    <section id="surahs" class="surah-section">
+        <h2>Explore All Surahs</h2>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Surah..."
+        >
+
+        <div id="surahList" class="surah-list">
+            Loading Surahs...
+        </div>
+    </section>
+
+    <!-- QURAN READER -->
+    <section id="reader" class="reader">
+        <h2 id="surahTitle">Select a Surah</h2>
+
+        <div id="verses">
+            Choose a Surah above to start reading.
+        </div>
+    </section>
+
+    <!-- BOOKMARKS AND PROGRESS -->
+    <section id="bookmarks" class="reader">
+        <h2>★ My Bookmarks</h2>
+
+        <section class="progress-section">
+            <h3>Reading Progress</h3>
+
+            <p id="lastRead">No reading history yet.</p>
+
+            <p>
+                Verses Read:
+                <span id="versesRead">0</span>
+            </p>
+
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+
+            <p id="progressText">0% completed</p>
+        </section>
+
+        <div id="bookmarkList">
+            No bookmarks saved yet.
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>☪ AL-QURAN KAREEM</p>
+        <p>Read • Reflect • Remember Allah</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
